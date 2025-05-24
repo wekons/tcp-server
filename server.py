@@ -8,7 +8,7 @@ class TCPServer:
     def __init__(self, host='0.0.0.0', port=None):
         # Usar puerto de variable de entorno o puerto por defecto
         self.host = host
-        self.port = port or int(os.environ.get('PORT', 25075))
+        self.port = port if port is not None else 25075
         self.running = False
         
     def log_message(self, message):
