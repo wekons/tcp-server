@@ -1,5 +1,3 @@
-
-```yaml
 services:
   - type: background
     name: tcp-server
