@@ -108,11 +108,10 @@ def main():
     
     # Mostrar configuración
     host = '0.0.0.0'
-    port = int(os.environ.get('PORT', 25075))
+    port = 25075  # Puerto fijo
     
     print(f"Host: {host}")
     print(f"Puerto: {port}")
-    print(f"Variables de entorno PORT: {os.environ.get('PORT', 'No definida')}")
     print("=" * 60)
     
     # Crear e iniciar servidor
@@ -124,6 +123,7 @@ def main():
         print("\n🛑 Cerrando servidor...")
     except Exception as e:
         print(f"❌ Error: {e}")
+
 
 if __name__ == "__main__":
     main()
