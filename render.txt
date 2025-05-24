@@ -1,0 +1,12 @@
+
+```yaml
+services:
+  - type: background
+    name: tcp-server
+    env: python
+    plan: free
+    region: oregon
+    buildCommand: ""
+    startCommand: python tcp_server.py
+    branch: main
+    repo: https://github.com/wekons/tcp-server.git
