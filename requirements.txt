@@ -1,0 +1,32 @@
+# ========================================
+# requirements.txt (Para ambas plataformas)
+# ========================================
+# El servidor solo usa librerías estándar de Python
+# Este archivo puede estar vacío o contener:
+# (opcional, solo si quieres agregar más funcionalidades)
+
+# ========================================
+# Procfile (Para Heroku si lo prefieres)
+# ========================================
+web: python server.py
+
+# ========================================
+# runtime.txt (Especificar versión Python)
+# ========================================
+python-3.11.0
+
+# ========================================
+# .gitignore
+# ========================================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.DS_Store
+.env
